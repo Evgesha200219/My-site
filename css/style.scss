@@ -26,7 +26,7 @@ body {
   margin: auto;
 }
 .logo {
-  background-image: url(image/logo.png);
+  background-image: url(../image/logo.png);
   display: block;
   width: 200px;
   height: 5em;
@@ -48,7 +48,7 @@ section-title {
 .hero {
   padding-top: 50px;
   padding-bottom: 155px;
-  background-image: url(image/main-bgrd.jpg);
+  background-image: url(../image/main-bgrd.jpg);
   background-position: center;
   background-size: cover;
 
