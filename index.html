@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сайт портфолио</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/b0bdb07e3e.js" crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/b0bdb07e3e.js" crossorigin="anonymous" defer></script>
+    
   </head>
   <body>
     <header class="hero">
@@ -32,8 +34,9 @@
       </div>
       <!-- /.wrapper -->
     </header>
+
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper">
           <h2 class="section-title">Обо мне</h2>
           <div class="about-content">
@@ -50,22 +53,47 @@
       </section>
       <!-- /.about -->
        
-      <section class="projects">
+      <section class="projects" id="portfolio">
         <div class="wrapper">
           <h2 class="section-title">Мои проекты</h2>
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
           <div class="slider">
             <div class="slide">
-              <img src="image/slider1.jpg" alt="WAXON" class="slide-image">
+              <img src="image/slide1.jpg" alt="WAXON" class="slide-image">
               <div class="slide-info">
-                <h4 class="slide-title">Waxon.Верстка макета</h4>
+                <h4 class="slide-title">Waxon. Верстка макета</h4>
                 <div class="slide-description">
-                  <ul class="slider-list">
-                    <li class="slider-item">Landing page</li>
-                    <li class="slider-item">Адаптивная валидная кроссбраузерная верстка</li>
-                    <li class="slider-item">Все интерактивные элементы имеют эффект при наведении (кнопки,ссылки, вкладки навигации)</li>
-                    <li class="slider-item">Для логотипов, иконок виджетов, а так же кнопок пагинации использована анимация</li>
-                    <li class="slider-item">Карточки постов и проектов имеют эффект затемнения при наведении</li>
+                  <ul class="slide-list">
+                    <li class="slide-item">Landing page</li>
+                    <li class="slide-item">Адаптивная валидная кроссбраузерная верстка</li>
+                    <li class="slide-item">Все интерактивные элементы имеют эффект при наведении (кнопки, ссылки, вкладки навигации)</li>
+                    <li class="slide-item">Для логотипов, иконок виджетов, а так же кнопок пагинации использованы анимация и трансформация </li>
+                    <li class="slide-item">Карточки постов и проектов имеют эффект затемнения при наведении</li>
                   </ul>
+                  <!-- /.slide-list -->
+                  <div class="technology">
+                    <span class="technology-lang">HTML</span>
+                    <span class="technology-lang">CSS</span>
+                  </div>
+                  <!-- /.slide-technology -->
                 </div>
                 <!-- /.slide-description -->
               </div>
@@ -78,7 +106,7 @@
       </section>
       <!-- /.projects -->
       
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="wrapper">
           <h2 class="section-title">Свяжитесь со мной</h3>
             <div class="contacts-info">
@@ -113,12 +141,20 @@
       </section>
       <!-- /.contacts -->
     </main>
-    <footer class="footer wrapper">
-      <a href="#" class="footer-policy">Политика конфиденциальности</a>
-      <p>Сделано с 
-        <i class="fa fa-heart" aria-hidden="true"></i>
-        Н.Е</p>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <a href="#" class="footer-policy">Политика конфиденциальности</a>
+          <p>Сделано с 
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            Н.Е</p>
+        </div>
+        <!-- /.footer-content -->
+      </div>
     </footer>
     <!-- /.footer -->
+    
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
